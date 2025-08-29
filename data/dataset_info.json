@@ -1,0 +1,9 @@
+{
+    "train_data": {
+    "file_name": "train_data.json",
+    "columns": {
+      "prompt": "prompt",
+      "response": "response"
+    }
+  }
+}

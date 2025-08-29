@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>DecoupleSearch</title>
+  <link rel="icon" href="https://img.alicdn.com/imgextra/i4/O1CN01FOwagl1XBpyVA2QVy_!!6000000002886-2-tps-512-512.png"/>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <style>
+    .findings-box {
+      border: 2px solid #d0d9e0;
+      border-radius: 8px;
+      padding: 10px 15px;
+      display: inline-block;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 16px;
+      line-height: 1.5;
+      background-color: #f9f9f9;
+    }
+
+    .findings-box .title {
+      font-weight: bold;
+      text-decoration: underline;
+      font-size: 18px;
+    }
+
+    .findings-box .content {
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">DecoupleSearch: Decoupling Planning and Searching via Hierarchical Reward Modeling</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block"><a href="https://sunhaonlp.github.io/" target="_blank">Hao Sun</a>,</span>
+              <span class="author-block">Zile Qiao<sup>&dagger;</sup>,</span>
+              <span class="author-block">Bo Wang,</span>
+              <span class="author-block">Guoxin Chen,</span>
+              <span class="author-block">Yingyan Hou,</span>
+              <br>
+              <span class="author-block">Yong Jiang,</span>
+              <span class="author-block">Pengjun Xie,</span>
+              <span class="author-block">Fei Huang,</span>
+              <span class="author-block">Yan Zhang<sup>&dagger;</sup></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              sunhao@stu.pku.edu.cn
+              <br>
+              <span class="author-block"><b>Tongyi Lab <img src="static/images/tongyi.jpg" alt="Tongyi Logo" style="width: 20px; height: 20px;"/>
+                , Alibaba Group</b></span>
+<!--              <span class="eql-cntrb"><small><br><sup>*</sup>Work done during internship at Tongyi Lab, Alibaba Group.</small></span>-->
+            </div>
+
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2505.04588" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/Alibaba-nlp/DecoupleSearch" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/sunhaonlp/DecoupleSearch_dataset" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <img src="static/images/db.svg" alt="Hugging Face Logo" style="width: 20px; height: 20px;"/>
+                  </span>
+                    <span>Dataset</span>
+                  </a>
+                </span>
+
+
+                <span class="link-block">
+                  <a href="https://huggingface.co/collections/sunhaonlp/" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <img src="static/images/hf-logo.png" alt="Hugging Face Logo" style="width: 20px; height: 20px;"/>
+                  </span>
+                    <span>Model</span>
+                  </a>
+                </span>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Retrieval-Augmented Generation (RAG) systems have emerged as a pivotal methodology for enhancing Large Language Models (LLMs) through dynamic integration of external knowledge. To further improve RAG’s flexibility, Agentic RAG introduces autonomous agents into the workflow. However, Agentic RAG faces several challenges: (1) success of each step depends on both high-quality planning and accurate searching, (2) lack of supervision for intermediate reasoning steps, and (3) exponentially large candidate space. We propose <strong>DecoupleSearch</strong>, a novel framework that decouples planning and searching processes via dual value models, enabling independent optimization of plan reasoning and search grounding. Our approach constructs a reasoning tree where nodes represent both planning and searching steps, assessed via Monte Carlo Tree Search. During inference, Hierarchical Beam Search iteratively refines candidates with dual value models. Extensive experiments across policy models of varying sizes demonstrate the effectiveness of our method. <!-- :contentReference[oaicite:4]{index=4} -->
+            </p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+  <section class="section" id="Overview">
+  <div class="container is-max-desktop content">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-fifths">
+        <h2 class="title is-3">🌟Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+            🔍 We introduce DecoupleSearch, a novel Agentic RAG framework that decouples planning-searching processes with dual value models, enabling independent optimization of plan reasoning and search grounding.          </p>
+          <p>
+            🤖 We propose improving the success rate of each step by fully exploring the planning and searching spaces. We utilize MCTS to accurately assess planning and searching quality, while Hierarchical Beam Search is employed to efficiently prune the exponential candidate space.          </p>
+          <p>
+            📊 Extensive experiments on five datasets across policy models of different parameter sizes demonstrate the effectiveness of our method.          </p>
+        </div>
+      </div>
+    </div>
+  </div> <!-- Added closing tag here -->
+</section>
+
+
+<!-- Framework -->
+<section class="section" id="Framework">
+  <div class="container is-max-desktop content">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-fifths">
+        <h2 class="title is-3">🔍 DecoupleSearch</h2>
+        <img src="static/images/model.png" width="100%">
+        <div class="content has-text-justified">
+
+          <p>
+            <b style="color:#615ced;">MCTS Annotation</b> For each simulation, the algorithm performs four steps:
+          </p>
+          <p>
+            <strong>Selection</strong>  The \(i\)-th simulation begins with \(s_0\), representing the input query. The algorithm selects nodes according to the Upper Confidence Bound for Trees (UCT) criterion:
+              \[
+              \mathrm{UCT}(s_t) \;=\; V_s(s_t) \;+\; w \sqrt{\frac{\ln N(\mathrm{parent}(s_t))}{N(s_t)}}
+            \]
+          </p>
+        <p>
+          <strong>Expansion</strong> After selecting the node to be expanded, the LLM generates the next plan and query based on the reasoning status. For simplicity, assume the chosen node \(s_t\) corresponds to the intermediate reasoning trajectory \(\tau_{t-1}\). The expansion process is as follows:
+          \[
+            p_t, q_t = \mathrm{LLM}(\tau_{t-1})
+          \]
+          \[
+            d_t = \mathrm{Retrieve}(q_t)
+          \]
+        </p>
+
+        <p>
+          <strong>Simulation</strong> The simulation evaluates the quality of planning and searching at each step and assigns reward values. For intermediate nodes, the LLM assesses the quality of planning and searching, assigning a value between \(-1\) and \(1\), where \(1\) indicates high quality and \(-1\) indicates low quality:
+          \[
+            R_p(s_t), R_s(s_t) = \mathrm{LLM}\bigl(\tau_{t-1},\,p_t,\,q_t\bigr)
+          \]
+        </p>
+
+    <p>
+      <strong>Backpropagation</strong> At the end of the \(i\)-th simulation, each edge along the path from the leaf node \(s_t\) to the root undergoes a backward pass update. The updates to their values and visiting counts are executed as follows:
+      \[
+        N(s) \;\leftarrow\; N(s) + 1
+      \]
+      \[
+        V_p(s) \;\leftarrow\; V_p(s) + \frac{1}{N(s)}\bigl(R_p(s) - V_p(s)\bigr)
+      \]
+      \[
+        V_s(s) \;\leftarrow\; V_s(s) + \frac{1}{N(s)}\bigl(R_s(s) - V_s(s)\bigr)
+      \]
+    </p>
+
+      <p>
+        <b style="color:#615ced;">Model Training</b> In our framework, the policy model \(\pi_{\theta}\) is initialized with a pre-trained LLM. We extend this model to derive the planning value model \(V_\phi\) and searching value model \(V_\psi\) by adding two auxiliary linear layers with a \(\texttt{Tanh}\) activation function. These layers operate alongside the traditional softmax layer responsible for token prediction. <br>
+          To construct the training signals for the policy model and the value models, we sample solution paths from the tree constructed through multiple rounds of MCTS. These paths are denoted as \(\mathbf{x}^+\) (correct solutions) and \(\mathbf{x}^-\) (incorrect solutions). We then apply a multi-task loss function to jointly update all the models:
+       \[
+            \small
+            \begin{split}
+                \mathcal{L} =\; &- \log \pi_{\theta}\bigl(\mathbf{x}^+ \mid \mathbf{q}\bigr)
+                + \beta \sum_{t=1}^{T(\mathbf{x})}
+                  \Bigl(
+                    \bigl\lVert V_{\phi}(\mathbf{s}_t) - V_p(\mathbf{s}_t) \bigr\rVert^2
+                    \;+\;
+                    \bigl\lVert V_{\psi}(\mathbf{s}_t) - V_s(\mathbf{s}_t) \bigr\rVert^2
+                  \Bigr)
+            \end{split}
+            \]
+      </p>
+
+    <p>
+        <b style="color:#615ced;">Hierarchical Beam Search</b> At each step, the policy model first samples multiple possible plans, which are ranked and filtered by the planning value model.
+Based on the most promising plan, the policy model generates multiple search queries, which are used to retrieve relevant documents. The retrieved documents are then evaluated by the searching value model to select the most valuable result. <br>
+This iterative process continues until the maximum depth is reached or no further paths can be expanded.
+Finally, the answers are evaluated by the planning value model, and the answer with the highest value is selected as the output.
+      </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Framework -->
+
+
+
+  <!-- MathJax script for rendering LaTeX -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+  <!-- Experiments -->
+<section class="section" id="Experiments">
+  <div class="container is-max-desktop content">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-fifths">
+        <h2 class="title is-3">📊 Experiments</h2>
+
+        <img src="static/images/main_result.png" width="70%">
+        <div class="content has-text-justified">
+          <p>
+            <b style="color:#615ced;">Main Results</b>
+          The above table presents the results of experiments conducted on five QA datasets using two model backbones.
+          </p>
+            <p>
+            <strong>First, our method achieves superior performance on all datasets across different policy models.</strong>
+            Notably, with Qwen2.5-7B-Instruct-1M as the policy model, <em>DecoupleSearch</em> achieves a 25.8% relative average improvement over the best-performing baseline. This improvement is attributed to the combined planning and searching beam search, which thoroughly explores both spaces and significantly increases the likelihood of identifying the correct reasoning path.
+          </p>
+          <p>
+            <strong>Second, agentic RAG baselines outperform both prompting and advanced RAG methods.</strong>
+            This is primarily due to the flexibility agentic RAG provides, allowing the policy model to dynamically decide what to retrieve and when to retrieve. Such dynamic retrieval is especially important for complex, multi-step queries, as demonstrated by strong performance on datasets like Bamboogle.
+          </p>
+          <p>
+            <strong>Third, larger policy models generally yield better performance.</strong>
+            However, after applying Hierarchical Beam Search, <em>DecoupleSearch</em> with the 7B policy model becomes comparable to the 14B model, highlighting that inference-time scaling can enable smaller models to achieve competitive results.
+          </p>
+        </div>
+
+        <img src="static/images/ablation.png" width="50%">
+        <div class="content has-text-justified">
+          <p>
+            <b style="color:#615ced;">Ablation Study</b>
+              We analyze the effectiveness of planning expansion and searching expansion by removing these components and observing the resulting performance changes.
+          </p>
+          <p>
+            <strong>Removing either expansion degrades performance.</strong>
+            Excluding planning or searching expansion leads to a clear drop in accuracy, underscoring the need to explore both the planning and searching spaces thoroughly.
+          </p>
+          <p>
+            <strong>Planning expansion is more critical.</strong>
+            Omitting the planning expansion causes a larger performance decline, since the plan defines the subsequent search space—suboptimal plans make it difficult to retrieve high-quality results.
+          </p>
+        </div>
+
+        <img src="static/images/hyper.png" width="60%">
+        <div class="content has-text-justified">
+          <p>
+            <b style="color:#615ced;">Scaling with Planning and Searching</b>
+          We conduct experiments on the HotpotQA, 2WikiMultihopQA, and MusiQue datasets, varying these parameters within the range of 1 to 5.
+          </p>
+         <p>
+            <strong>Model performance peaks at a planning expansion size of 3.</strong>
+            Smaller values limit exploration of plan candidates, while larger values overwhelm the planning value model’s ranking capacity, causing accuracy to drop.
+          </p>
+          <p>
+            <strong>Larger searching expansion sizes generally improve performance.</strong>
+            Increasing <em>\(B_2\)</em> raises the chance of retrieving critical evidence, and the searching value model can effectively rank results by directly evaluating document relevance.
+          </p>
+        </div>
+
+        <img src="static/images/value_study.jpg" width="60%">
+        <div class="content has-text-justified">
+          <p>
+            <b style="color:#615ced;">Effectiveness of Value Models</b>
+          We evaluate the accuracy of our planning and searching value models by comparing their beam ranking against random selection.
+        </p>
+        <p>
+        <strong>Ranking by the learned value model outperforms random selection.</strong>
+        For both planning expansion and searching expansion, using the value model to rank candidates yields higher performance than random choice, confirming that both value heads accurately assess quality.
+        </p>
+        <p>
+        <strong>Performance gains are more pronounced for searching expansion.</strong>
+        Evaluating search results is relatively easier—values directly reflect answer presence—whereas assessing plans lacks clear patterns, making plan ranking more challenging.
+        </p>
+        <p>
+        <strong>Prioritize searching expansion when resources are limited.</strong>
+        With constrained compute, allocating more beams to searching expansion is often more robust, given the higher reliability of the searching value model.
+        </p>
+        </div>
+
+        <!-- Case studies -->
+        <img src="static/images/case.png" width="90%">
+        <div class="content has-text-justified">
+          <p>
+            <b style="color:#615ced;">Case Study</b>
+            We present a case study from the MusiQue dataset.
+          </p>
+          <p>
+            The policy model first proposes different plans (e.g. look up her spouse vs. her lineage), and the planning‐value model ranks the spouse search highest. It then issues “Who is Gulcicek Hatun’s husband?” to find Murad I, prunes off unrelated hits, and follows up with “Who was Murad I’s father?” to identify Orhan Ghazi—again discarding low‐value results. In just a few targeted steps, it pinpoints the father-in-law, demonstrating how planning expands the search space while value scoring zeroes in on the best leads.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Experiments -->
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the of this website, we just ask that you link back to this page in the footer.
+              <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
