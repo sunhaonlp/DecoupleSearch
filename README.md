@@ -4,7 +4,7 @@
 </p>
 </div>
 <div align="center">
-<h1>DecoupleSearch: Decoupling Planning and Searching via Hierarchical Reward Modeling
+<h1>DecoupleSearch: Decouple Planning and Search via Hierarchical Reward Modeling
 </h1>
 </div>
 
