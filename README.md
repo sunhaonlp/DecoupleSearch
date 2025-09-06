@@ -9,10 +9,10 @@
 </div>
 
 <div align="center">
-  <a href='https://alibaba-nlp.github.io/DecoupleSearch/'><img src='https://img.shields.io/badge/Homepage-DecoupleSearch-6c5ce7?logo=github&logoColor=white'></a>
+  <a href='https://sunhaonlp.github.io/DecoupleSearch/'><img src='https://img.shields.io/badge/Homepage-DecoupleSearch-6c5ce7?logo=github&logoColor=white'></a>
   <a href='https://arxiv.org/pdf/2505.04588'><img src='https://img.shields.io/badge/Paper-arXiv-d63031?logo=arxiv&logoColor=white'></a>
-  <a href='https://huggingface.co/collections/sunhaonlp/zerosearch-v2-6827f4ee6b6265069d443d4e'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-0984e3'></a>
-  <a href='https://huggingface.co/datasets/sunhaonlp/ZeroSearch_dataset'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Datasets-00b894'></a>
+  <a href='https://huggingface.co/collections/sunhaonlp/decouplesearch-6860d78abbe29b43f6c347d4'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-0984e3'></a>
+  <a href='https://huggingface.co/datasets/sunhaonlp/DecoupleSearch_dataset'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Datasets-00b894'></a>
 </div>
 <p align="center">
   <i><b>Hao Sun, Zile Qiao, Bo Wang, Guoxin Chen, Yingyan Hou,</b></i><br>
@@ -24,7 +24,7 @@
 # 📌 Introduction
 
 - We introduce DecoupleSearch, a novel Agentic RAG framework that decouples planning-searching processes with dual value models, enabling independent optimization of plan reasoning and search grounding.
-- We propose improving the success rate of each step by fully exploring the planning and searching spaces. We utilize MCTS to accurately assess planning and searching quality, while Hierarchical Beam Search is employed to efficiently prune the exponential candidate space.
+- We propose improving the success rate of each step by fully exploring the planning and searching spaces. We utilize MCTS to accurately assess planning and searching quality, while Hierarchical Beam Search is employed to prune the exponential candidate space efficiently.
 - Extensive experiments on five datasets across policy models of different parameter sizes demonstrate the effectiveness of our method.
 
 # 🛠 Dependencies
@@ -47,7 +47,7 @@ export WANDB_KEY=YOUR_WANDB_KEY_HERE
 (1) Prepare for the retriever.
 
 ```bash
-# Download the retrieval indexing and corpus.
+# Download the retrieval indexing corpus.
 wget https://rgw.cs.uwaterloo.ca/pyserini/indexes/lucene-index.wikipedia-dpr-100w.20210120.d1b9e6.tar.gz
 wget https://rgw.cs.uwaterloo.ca/pyserini/indexes/faiss.wikipedia-dpr-100w.dpr_multi.20200127.f403c3.tar.gz
 
