@@ -10,7 +10,7 @@
 
 <div align="center">
   <a href='https://sunhaonlp.github.io/DecoupleSearch/'><img src='https://img.shields.io/badge/Homepage-DecoupleSearch-6c5ce7?logo=github&logoColor=white'></a>
-  <a href='https://arxiv.org/pdf/2505.04588'><img src='https://img.shields.io/badge/Paper-arXiv-d63031?logo=arxiv&logoColor=white'></a>
+  <a href='https://github.com/sunhaonlp/DecoupleSearch/blob/main/paper/DecoupleSearch.pdf'><img src='https://img.shields.io/badge/Paper-arXiv-d63031?logo=arxiv&logoColor=white'></a>
   <a href='https://huggingface.co/collections/sunhaonlp/decouplesearch-6860d78abbe29b43f6c347d4'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-0984e3'></a>
   <a href='https://huggingface.co/datasets/sunhaonlp/DecoupleSearch_dataset'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Datasets-00b894'></a>
 </div>
